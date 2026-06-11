@@ -9,8 +9,7 @@ html{
 }
 
 body{
-
-    background:#fdfaf5;
+    background:#efd7dd;
 
     color:#222;
 
@@ -94,11 +93,10 @@ nav a:hover{
 
     border-bottom:1px solid #dcdcdc;
 
-    background:linear-gradient(
-    180deg,
-    #fffdf9 0%,
-    #f8f1e8 100%
-);
+    background:#f5e3e7;
+
+    
+
 }
 
 .hero-image{
@@ -150,9 +148,7 @@ nav a:hover{
 
     margin-bottom:25px;
 
-    .hero-text h1{
     letter-spacing:-2px;
-}
 }
 .hero-subtitle{
 
@@ -193,11 +189,11 @@ nav a:hover{
 
     padding:10px 20px;
 
-    border:1px solid #e8c9d5;
+   border:1px solid var(--gold);
 
-    background:#fdf2f6;
+     background:rgba(212,176,140,.12);
 
-    color:#7a5563;
+    color:var(--rose-dark);
 
     border-radius:50px;
 
@@ -311,7 +307,7 @@ nav a:hover{
 
     height:3px;
 
-    background:#e8c9d5;
+    background:var(--gold);
 
     margin-top:15px;
 
@@ -339,7 +335,7 @@ nav a:hover{
 
     border-bottom:1px solid #dcdcdc;
 
-    background:#fffdf9;
+    background:#f7ecef;
 }
 
 .socials{
@@ -424,7 +420,7 @@ nav a:hover{
 
     padding:25px;
 
-    border:1px solid #dcdcdc;
+    border-left:4px solid var(--gold);
 
     border-radius:10px;
 
@@ -455,10 +451,11 @@ nav a:hover{
 
     gap:40px;
 
-    background:linear-gradient(
+  background:linear-gradient(
     180deg,
-    #f8f1e8 0%,
-    #f3e5d0 100%
+    #f5e3e7 0%,
+    #f1e3d1 100%
+);
 );
     position:relative;
     overflow:hidden;
@@ -502,7 +499,9 @@ nav a:hover{
 
     border-radius:50px;
 
-    background:#e8c9d5;
+    background:var(--gold);
+
+    color:white;
 
     font-size:1.1rem;
 
@@ -557,11 +556,13 @@ nav a:hover{
 
     border-radius:40px;
 
-    background:#e8c9d5;
+    background:var(--gold);
 
     text-decoration:none;
 
-    color:#222;
+    color:white;
+
+    font-weight:600;
 
     text-align:center;
 
@@ -572,7 +573,21 @@ nav a:hover{
 
 .hero-btn:hover{
 
+
+    background:var(--gold-dark);
+
+
     transform:translateY(-4px);
 
     box-shadow:0 15px 30px rgba(232,201,213,.55);
+}
+:root{
+
+    --rose:#f5e3e7;
+    --rose-dark:#7a5563;
+
+    --gold:#d4b08c;
+    --gold-dark:#b9926e;
+
+    --text:#222;
 }
