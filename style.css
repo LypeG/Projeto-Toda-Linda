@@ -3,7 +3,16 @@
     padding:0;
     box-sizing:border-box;
 }
+:root{
 
+    --rose:#f5e3e7;
+    --rose-dark:#7a5563;
+
+    --gold:#d4b08c;
+    --gold-dark:#b9926e;
+
+    --text:#222;
+}
 html{
     scroll-behavior:smooth;
 }
@@ -266,15 +275,28 @@ nav a:hover{
     flex:1;
 
     padding:80px;
+
+     display:flex;
+
+    justify-content:center;
 }
 
 .carousel img{
 
-    width:100%;
+    width:75%;
 
-    border-radius:10px;
+    border-radius:15px;
+
+    transition: opacity 0.5s ease;
+
+   
+
 }
 
+.carousel img.fade{
+
+    opacity:0.7; 
+}
 .services-text{
 
     flex:1;
@@ -349,6 +371,21 @@ nav a:hover{
     flex-direction:column;
 
     justify-content:center;
+
+    align-items:center;
+}
+
+.socials a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
 }
 
 .socials h2{
@@ -356,6 +393,8 @@ nav a:hover{
     font-size:3rem;
 
     margin-bottom:40px;
+
+    text-align:center;
 }
 
 .socials ul{
@@ -456,7 +495,7 @@ nav a:hover{
     #f5e3e7 0%,
     #f1e3d1 100%
 );
-);
+
     position:relative;
     overflow:hidden;
 }
@@ -580,14 +619,4 @@ nav a:hover{
     transform:translateY(-4px);
 
     box-shadow:0 15px 30px rgba(232,201,213,.55);
-}
-:root{
-
-    --rose:#f5e3e7;
-    --rose-dark:#7a5563;
-
-    --gold:#d4b08c;
-    --gold-dark:#b9926e;
-
-    --text:#222;
 }
