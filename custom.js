@@ -33,3 +33,59 @@ setInterval(() => {
     }, 500);
 
 }, 4000);
+
+const backToTop = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 300){
+
+        backToTop.classList.add("show");
+
+    }else{
+
+        backToTop.classList.remove("show");
+
+    }
+
+});
+const hiddenElements = document.querySelectorAll(".hidden");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show-element");
+
+        }
+
+    });
+
+});
+
+hiddenElements.forEach((element) => {
+
+    observer.observe(element);
+
+});
+const themeToggle = document.getElementById("theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        themeToggle.innerHTML =
+        '<i class="fas fa-sun"></i>';
+
+    }else{
+
+        themeToggle.innerHTML =
+        '<i class="fas fa-moon"></i>';
+
+    }
+
+});
